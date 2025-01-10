@@ -1,0 +1,26 @@
+{
+  "name": "CRUD_api_REST_nodeJS",
+  "version": "1.0.0",
+  "description": "REST api in nodejs and postgres database.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --legacy-watch src/server.js"
+  },
+  "repository": "http://github.com/geraldogenuca/CRUD_api_REST_nodeJS",
+  "author": "geraldogenuca <geraldogenuca@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
