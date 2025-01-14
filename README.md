@@ -39,4 +39,4 @@ with Postgres SQL database.
 
 ## :chart_with_upwards_trend: License
 
-Este projeto está sob a licença GNU AFFERO GENERAL PUBLIC. Consulte o LICENSE para obter detalhes.
+This project is under the GNU AFFERO GENERAL PUBLIC license. See LICENSE for details.
