@@ -17,6 +17,4 @@ app.use(cors())
 // Running routes, creating end-points.
 app.use('/categories', categoriesRoutes)
 
-app.use('/test01', (req, res) => {res.json('Index on go!')})
-
 module.exports = app

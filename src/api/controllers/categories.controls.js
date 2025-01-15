@@ -1,6 +1,9 @@
+// Import DataBase config and query execute
 const client = require('../../config/config_db')
 
+// Creating the control class
 class CategoriesControllers {
+    // Creation Control
     async create(req, res) {
         try {
             const query = 'INSERT INTO Categories (name_category) VALUES (?);'
@@ -26,6 +29,7 @@ class CategoriesControllers {
         }
     }
 
+    // Index Control
     async index(req, res) {
         try {
             const result = await client.execute(`SELECT * FROM Categories;`)
@@ -51,6 +55,7 @@ class CategoriesControllers {
         }
     }
 
+    // Details Control
     async show(req, res) {
         try {
             const query = 'SELECT * FROM Categories WHERE id_category = ?;'
@@ -63,8 +68,8 @@ class CategoriesControllers {
                     name_category: result[0].name_category,
                     request: {
                         type: "GET",
-                        description: "Details of categories!",
-                        url: process.env.URL_CATS + result[0].id_category
+                        description: "Details of category!",
+                        url: process.env.URL_CATG + result[0].id_category
                     }
                 }
             }
@@ -75,6 +80,7 @@ class CategoriesControllers {
         }
     }
 
+    // Delete Control
     async delete(req, res) {
         try {
             const query = 'DELETE FROM Categories WHERE id_category = ?;'
@@ -98,4 +104,5 @@ class CategoriesControllers {
 
 }
 
+// Import Class Control
 module.exports = new CategoriesControllers()
