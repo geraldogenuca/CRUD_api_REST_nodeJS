@@ -6,6 +6,9 @@ const express = require('express')
 
 // Import routes.
 , categoriesRoutes = require('./api/routes/categories.routes')
+, productsRoutes = require('./api/routes/products.routes')
+, costumersRoutes = require('./api/routes/costumers.routes')
+, ordersRoutes = require('./api/routes/orders.routes')
 
 // Running dependencies and libs.
 app.use('/uploads', express.static('uploads'))
@@ -16,5 +19,8 @@ app.use(cors())
 
 // Running routes, creating end-points.
 app.use('/categories', categoriesRoutes)
+app.use('/products', productsRoutes)
+app.use('/costumers', costumersRoutes)
+app.use('/orders', ordersRoutes)
 
 module.exports = app

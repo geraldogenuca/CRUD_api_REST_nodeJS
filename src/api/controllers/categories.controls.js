@@ -6,6 +6,19 @@ class CategoriesControllers {
     // Creation Control
     async create(req, res) {
         try {
+            const query_check = `
+                SELECT      name_category
+                    FROM    Categories
+                    WHERE   name_category = ?;
+            `
+            const result_check = await client.execute(query_check, [req.body.name_category])
+
+            if (result_check.length > 0) {
+                return res.status(404).json({
+                    message: 'Category name already exists!'
+                })
+            }
+
             const query = 'INSERT INTO Categories (name_category) VALUES (?);'
 
             const result = await client.execute(query, [req.body.name_category])
@@ -17,7 +30,7 @@ class CategoriesControllers {
                     name_category: req.body.name_category,
                     request: {
                         type: "POST",
-                        description: "Inserted categories!",
+                        description: "Inserted category!",
                         url: process.env.URL_CATG + result.insertId
                     }
                 }
@@ -43,7 +56,7 @@ class CategoriesControllers {
                         request: {
                             type: "GET",
                             description: "List of categories!",
-                            url: process.env.URL_CATS + cat.id_category
+                            url: process.env.URL_CATG + cat.id_category
                         }
                     }
                 })
@@ -58,6 +71,19 @@ class CategoriesControllers {
     // Details Control
     async show(req, res) {
         try {
+            const query_check = `
+                            SELECT      id_category
+                                FROM    Categories
+                                WHERE   id_category = ?;
+                        `
+                        const result_check = await client.execute(query_check, [req.params.id_category])
+            
+                        if (result_check.length == 0) {
+                            return res.status(404).json({
+                                message: 'Category not found!'
+                            })
+                        }
+
             const query = 'SELECT * FROM Categories WHERE id_category = ?;'
     
             const result = await client.execute(query, [req.params.id_category])
@@ -83,6 +109,19 @@ class CategoriesControllers {
     // Delete Control
     async delete(req, res) {
         try {
+            const query_check = `
+                SELECT      id_category
+                    FROM    Categories
+                    WHERE   id_category = ?;
+            `
+            const result_check = await client.execute(query_check, [req.params.id_category])
+
+            if (result_check.length == 0) {
+                return res.status(404).json({
+                    message: 'Category not found!'
+                })
+            }
+
             const query = 'DELETE FROM Categories WHERE id_category = ?;'
 
             await client.execute(query, [req.params.id_category])
