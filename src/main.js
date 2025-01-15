@@ -5,7 +5,7 @@ const express = require('express')
 , morgan = require('morgan')
 
 // Import routes.
-
+, categoriesRoutes = require('./api/routes/categories.routes')
 
 // Running dependencies and libs.
 app.use('/uploads', express.static('uploads'))
@@ -15,7 +15,7 @@ app.use(morgan('dev'))
 app.use(cors())
 
 // Running routes, creating end-points.
-
+app.use('/categories', categoriesRoutes)
 
 app.use('/test01', (req, res) => {res.json('Index on go!')})
 

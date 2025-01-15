@@ -1,5 +1,5 @@
 # CRUD_api_REST_nodeJS
-CRUD system, REST api in nodeJS and PostgresSQL.
+CRUD system, REST api in nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuc GitHub last commit Repository issues License
 
@@ -9,7 +9,7 @@ GitHub language count Repository size Made by geraldogenuc GitHub last commit Re
 
   Create a simple example of CRUD for study, where you develop a system for registering and updating products, 
 also registering users and customers and ending with the sales register. A REST api made in node-JavaScript, 
-with Postgres SQL database.
+with MySQL database.
 
 ## :computer: Technologies
 
@@ -29,9 +29,7 @@ with Postgres SQL database.
   
 - multer
   
-- pg
-  
-- pg-hstore
+- mysql2
 
 
 ## :question: How to use
