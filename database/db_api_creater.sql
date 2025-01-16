@@ -1,5 +1,5 @@
 -- MySQL Workbench Synchronization
--- Generated: 2025-01-15 17:42
+-- Generated: 2025-01-16 17:09
 -- Model: New Model
 -- Version: 1.0
 -- Project: Name of the project
@@ -64,33 +64,17 @@ COLLATE = utf8_unicode_ci;
 CREATE TABLE IF NOT EXISTS `test01`.`Orders` (
   `id_order` INT(11) NOT NULL AUTO_INCREMENT,
   `id_costumer` INT(11) NOT NULL,
+  `id_product` INT(11) NOT NULL,
+  `quantity` DECIMAL NOT NULL,
   PRIMARY KEY (`id_order`),
   INDEX `fk_Orders_Costumers1_idx` (`id_costumer` ASC) VISIBLE,
+  INDEX `fk_Orders_Products1_idx` (`id_product` ASC) VISIBLE,
   CONSTRAINT `fk_Orders_Costumers1`
     FOREIGN KEY (`id_costumer`)
     REFERENCES `test01`.`Costumers` (`id_costumer`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8
-COLLATE = utf8_unicode_ci;
-
-CREATE TABLE IF NOT EXISTS `test01`.`Orders_Products` (
-  `id_orders_products` INT(11) NOT NULL AUTO_INCREMENT,
-  `id_order` INT(11) NOT NULL,
-  `id_product` INT(11) NOT NULL,
-  `quantity` INT(11) NOT NULL,
-  `price_unit` DECIMAL(7,2) NULL DEFAULT NULL,
-  `price_total` DECIMAL(11,2) GENERATED ALWAYS AS (quantity * price_unit) VIRTUAL,
-  PRIMARY KEY (`id_orders_products`),
-  INDEX `fk_Orders_Products_Orders1_idx` (`id_order` ASC) VISIBLE,
-  INDEX `fk_Orders_Products_Products1_idx` (`id_product` ASC) VISIBLE,
-  CONSTRAINT `fk_Orders_Products_Orders1`
-    FOREIGN KEY (`id_order`)
-    REFERENCES `test01`.`Orders` (`id_order`)
-    ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Orders_Products_Products1`
+  CONSTRAINT `fk_Orders_Products1`
     FOREIGN KEY (`id_product`)
     REFERENCES `test01`.`Products` (`id_product`)
     ON DELETE NO ACTION

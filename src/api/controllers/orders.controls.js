@@ -5,21 +5,29 @@ const client = require('../../config/config_db')
 class OrdersControllers {
     // Creation Control
     async create(req, res) {
-        try {            
+        try {                        
             const query = `
-                INSERT INTO Orders (id_costumer) VALUES (?);
+                INSERT INTO Orders (
+                    id_costumer, id_product, quantity
+                    ) 
+                VALUES (?, ?, ?);
             `
 
             const result = await client.execute(
                 query, 
-                [req.body.id_costumer]
+                [
+                    req.body.id_costumer, req.body.id_product, 
+                    req.body.quantity
+                ]
             )
 
             const response = {
                 message: 'Order created successfully!',
-                createdCategory: {
+                createdCategory: {                  
                     id_order: result.insertId,
                     id_costumer: req.body.id_costumer,
+                    id_product: req.body.id_product,
+                    quantity: req.body.quantity,
                     request: {
                         type: "POST",
                         description: "Inserted order!",
