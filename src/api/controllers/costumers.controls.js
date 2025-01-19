@@ -1,5 +1,7 @@
 // Import DataBase config and query execute
-const client = require("../../config/config_db");
+const client = require("../../config/config_db"),
+bcrypt = require('bcrypt'),
+jwt = require('jsonwebtoken')
 
 // Creating the control class
 class CostumersControllers {
@@ -29,10 +31,12 @@ class CostumersControllers {
                     VALUES (?, ?, ?);
             `;
 
+      const password_hash = bcrypt.hashSync(req.body.password_costumer, 10)
+
       const result = await client.execute(query, [
         req.body.name_costumer,
         req.body.email_costumer,
-        req.body.password_costumer,
+        password_hash,
       ]);
 
       const response = {
@@ -41,7 +45,7 @@ class CostumersControllers {
           id_costumer: result.insertId,
           name_costumer: req.body.name_costumer,
           email_costumer: req.body.email_costumer,
-          password_costumer: req.body.password_costumer,
+          password_costumer: password_hash,
           request: {
             type: "POST",
             description: "Inserted costumer!",
@@ -51,6 +55,53 @@ class CostumersControllers {
       };
 
       return res.status(200).json(response);
+    } catch (error) {
+      return res.status(500).json({ error: error });
+    }
+  }
+
+  // Creation Login Control
+  async login(req, res) {
+    try {
+      const query_check = `
+                SELECT      email_costumer
+                    FROM    Costumers
+                    WHERE   email_costumer = ?;
+            `;
+      const result_check = await client.execute(query_check, [
+        req.body.email_costumer,
+      ]);
+
+      if (result_check.length < 1) {
+        return res.status(404).json({
+          message: "Login failed! Check the fields, or contact support!",
+        });
+      }
+
+      const query = 'SELECT * FROM Costumers WHERE email_costumer = ?;'
+
+      const result = await client.execute(query, [req.body.email_costumer])
+
+      if(await bcrypt.compareSync(
+        req.body.password_costumer,
+        result[0].password_costumer
+      )) {
+        const token = jwt.sign({
+          id_costumer: result[0].id_costumer,
+          email_costumer: result[0].email_costumer
+        }, 
+        process.env.JWT_KEY,
+        {
+          expiresIn: "2h"
+        })
+
+        return res.status(200).json({
+          message: 'Authenticated successfully!',
+          token: token
+        })
+      }
+
+      return res.status(200).json({message: "Authentication Failed!"});
     } catch (error) {
       return res.status(500).json({ error: error });
     }
