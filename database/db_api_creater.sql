@@ -1,5 +1,5 @@
 -- MySQL Workbench Synchronization
--- Generated: 2025-01-16 17:09
+-- Generated: 2025-01-19 14:14
 -- Model: New Model
 -- Version: 1.0
 -- Project: Name of the project
@@ -36,13 +36,13 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `test01`.`Img_Products` (
+CREATE TABLE IF NOT EXISTS `test01`.`Images` (
   `id_image` INT(11) NOT NULL AUTO_INCREMENT,
   `id_product` INT(11) NOT NULL,
   `path_image` VARCHAR(500) NOT NULL,
   PRIMARY KEY (`id_image`),
-  INDEX `fk_Img_Products_Products1_idx` (`id_product` ASC) VISIBLE,
-  CONSTRAINT `fk_Img_Products_Products1`
+  INDEX `fk_Images_Products1_idx` (`id_product` ASC) VISIBLE,
+  CONSTRAINT `fk_Images_Products1`
     FOREIGN KEY (`id_product`)
     REFERENCES `test01`.`Products` (`id_product`)
     ON DELETE NO ACTION
