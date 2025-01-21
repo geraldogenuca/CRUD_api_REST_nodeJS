@@ -1,52 +1,50 @@
 services:
-  mysql_db:
-    image: mysql:lts
-    container_name: mysql_container
+  mysqldb:
+    image: mysql:8.0
+    container_name: mysqlcontainer
+    command: --default-authentication-plugin=mysql_native_password
     restart: unless-stopped
     volumes:
-      - mysql_db:/var/lib/mysql
+      - /database:/var/lib/mysql
     ports:
       - ${DB_PORT}:${DB_PORT}
     expose:
-      - ${DB_PORT} 
+      - ${DB_PORT}
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       SERVICE_TAGS: prod
-      SERVICE_NAME: mysql_db
+      SERVICE_NAME: mysqldb
     networks:
       - internalnet
 
-  node_app:
-    container_name: node_app_container
+  nodeapp:
+    container_name: nodeappcontainer
     build: .
-    image: node_app:v1
-    restart: unless-stopped
+    image: nodeapp:v1
     volumes:
       - /nodeapp:/code
-    ports:
-      - ${SERVER_PORT}:${SERVER_PORT} 
+    ports: 
+      - ${SERVER_PORT}:${SERVER_PORT}
     expose:
-      - ${SERVER_PORT} 
+      - ${SERVER_PORT}
     environment:
-      DB_HOST: ${DB_HOST}
+      DB_HOST: mysqldb
       DB_PORT: ${DB_PORT}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_DATABASE}
       DB_CONNECTION_LIMIT: 20
       SERVICE_TAGS: prod
-      SERVICE_NAME: node_app_service
+      SERVICE_NAME: nodeappservice
       SERVER_PORT: ${SERVER_PORT}
     depends_on:
-      - mysql_db
+      - mysqldb
     networks:
       - internalnet
 
-volumes:
-  mysql_db:
 networks:
   internalnet:
     driver: bridge

@@ -3,8 +3,8 @@ FROM node:lts
 WORKDIR /usr/code
 
 COPY package*.json ./
+COPY .env ./.env
 
-RUN npm install -g nodemon
 RUN npm install
 
 COPY . .
