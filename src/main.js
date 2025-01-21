@@ -24,6 +24,6 @@ app.use("/products", productsRoutes);
 app.use("/costumers", costumersRoutes);
 app.use("/orders", ordersRoutes);
 app.use("/images", imagesRoutes);
-app.use('/test', (req, res) => {res.json('Teste funfou!!!')})
+app.use('/test', (req, res) => {res.json('Teste funfou mente!!!')})
 
 module.exports = app;
