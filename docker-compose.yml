@@ -6,16 +6,16 @@ services:
     restart: unless-stopped
     volumes:
       - ./dbinit/init.sql:/docker-entrypoint-initdb.d/0_init.sql
-      - $HOME/database:/var/lib/mysql
+      - /database:/var/lib/mysql
     ports:
-      - 3306:3306
+      - ${DB_PORT}:${DB_PORT}
     expose:
-      - 3306
+      - ${DB_PORT} 
     environment:
-      MYSQL_DATABASE: teste02
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: gegs
-      MYSQL_ROOT_PASSWORD: gegs
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       SERVICE_TAGS: prod
       SERVICE_NAME: mysqldb
     networks:
@@ -26,21 +26,21 @@ services:
     build: .
     image: nodeapp:v1
     volumes:
-      - $HOME/nodeapp:/code
+      - /nodeapp:/code
     ports:
-      - 5000:5000
+      - ${SERVER_PORT}:${SERVER_PORT}
     expose:
-      - 5000 
+      - ${SERVER_PORT} 
     environment:
-      DB_HOST: mysqldb
-      DB_PORT: 3306
-      DB_USER: 'root'
-      DB_PASSWORD: 'gegs'
-      DB_NAME: teste02
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_DATABASE}
       DB_CONNECTION_LIMIT: 20
       SERVICE_TAGS: prod
       SERVICE_NAME: nodeappservice
-      SERVER_PORT: 5000
+      SERVER_PORT: ${SERVER_PORT}
     depends_on:
       - mysqldb
     networks:

@@ -27,7 +27,8 @@ class ImagesControllers {
             type: "POST",
             description: "Inserted image!",
             url: process.env.URL_IMGS + result.insertId,
-            path_image: process.env.URL_SERVER + 
+            path_image:
+              process.env.URL_SERVER +
               req.file.path.replaceAll("\\", "/").replaceAll(" ", "_"),
           },
         },
@@ -54,9 +55,10 @@ class ImagesControllers {
             request: {
               type: "GET",
               description: "List of Images!",
-              url_path: process.env.URL_SERVER + imgs.id_image,
-              path_image: process.env.URL_SERVER + 
-                req.file.path.replaceAll("\\", "/").replaceAll(" ", "_"),
+              url_path: process.env.URL_IMGS + imgs.id_image,
+              url_image:
+                process.env.URL_SERVER +
+                imgs.path_image.replaceAll("\\", "/").replaceAll(" ", "_"),
             },
           };
         }),
@@ -100,9 +102,10 @@ class ImagesControllers {
             request: {
               type: "GET",
               description: "List of Images!",
-              url_path: process.env.URL_SERVER + imgs_prod.id_image,
-              path_image: process.env.URL_SERVER + 
-                req.file.path.replaceAll("\\", "/").replaceAll(" ", "_"),
+              url_path: process.env.URL_IMGS + imgs_prod.id_image,
+              url_image:
+                process.env.URL_SERVER +
+                imgs_prod.path_image.replaceAll("\\", "/").replaceAll(" ", "_"),
             },
           };
         }),
@@ -145,7 +148,8 @@ class ImagesControllers {
             type: "GET",
             description: "Details of image!",
             url: process.env.URL_IMGS + result[0].id_image,
-            path_image: process.env.URL_SERVER + 
+            path_image:
+              process.env.URL_SERVER +
               result[0].path_image.replaceAll("\\", "/").replaceAll(" ", "_"),
           },
         },
@@ -184,7 +188,7 @@ class ImagesControllers {
         request: {
           type: "DELETE",
           description: "Deleted Image!",
-          url_deleted: process.env.URL_SERVER + req.params.id_image,
+          url_deleted: process.env.URL_IMGS + req.params.id_image,
         },
       };
 
