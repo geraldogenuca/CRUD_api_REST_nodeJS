@@ -4,8 +4,9 @@
   "description": "REST api in nodejs and mysql database.",
   "main": "src/server.js",
   "scripts": {
+    "test": "node src/server.js",
     "start": "node src/server.js",
-    "dev": "nodemon --legacy-watch --delay 5 src/server.js"
+    "dev": "nodemon --legacy-watch src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,12 +16,20 @@
     "api",
     "rest",
     "nodejs",
-    "sequelize",
     "express",
-    "mysql"
+    "mysql",
+    "crud",
+    "docker"
   ],
-  "author": "geraldogenuca <geraldogenuca@gmail.com>",
+  "author": "gegsdeveloper <gegsdeveloper@gmail.com>",
   "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/issues"
+  },
+  "homepage": "https://github.com/geraldogenuca/CRUD_api_REST_nodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
@@ -30,12 +39,5 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.12.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  },
-  "bugs": {
-    "url": "https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/issues"
-  },
-  "homepage": "https://github.com/geraldogenuca/CRUD_api_REST_nodeJS#readme"
+  }
 }
