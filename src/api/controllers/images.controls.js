@@ -6,6 +6,22 @@ class ImagesControllers {
   // Creation Control.
   async create(req, res) {
     try {
+      // Checking data integrity.
+      const query_check = `
+                SELECT      id_product
+                    FROM   Products
+                    WHERE   id_product = ?;
+            `;
+      const result_check = await client.execute(query_check, [
+        req.body.id_product,
+      ]);
+
+      if (result_check.length == 0) {
+        return res.status(404).json({
+          message: "Product not found!",
+        });
+      }
+
       // Performing the action.
       const query = `
                 INSERT INTO 

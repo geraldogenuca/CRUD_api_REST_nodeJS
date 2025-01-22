@@ -16,6 +16,7 @@ routes
   )
   .get("/index", login.optional, imagesControllers.index)
   .get("/:id_image", login.optional, imagesControllers.show)
+  .get("/product/:id_product", login.optional, imagesControllers.showForProduct)
   .delete("/delete/:id_image", login.required, imagesControllers.delete);
 
 // Import control routes.

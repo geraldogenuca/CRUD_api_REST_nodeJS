@@ -6,6 +6,37 @@ class OrdersControllers {
   // Creation Control.
   async create(req, res) {
     try {
+      // Checking data integrity.
+      const query_check_prod = `
+                SELECT      id_product
+                    FROM    Products
+                    WHERE   id_product = ?;
+            `;
+      const result_check_prod = await client.execute(query_check_prod, [
+        req.body.id_product,
+      ]);
+
+      if (result_check_prod.length == 0) {
+        return res.status(404).json({
+          message: "Product not found!",
+        });
+      }
+
+      const query_check_custm = `
+                SELECT      id_costumer
+                    FROM    Costumers
+                    WHERE   id_costumer = ?;
+            `;
+      const result_check_custm = await client.execute(query_check_custm, [
+        req.body.id_costumer,
+      ]);
+
+      if (result_check_custm.length == 0) {
+        return res.status(404).json({
+          message: "Product not found!",
+        });
+      }
+
       // Performing the action.
       const query = `
                 INSERT INTO Orders (

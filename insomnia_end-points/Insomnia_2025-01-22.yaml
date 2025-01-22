@@ -1,43 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2025-01-21T21:51:58.246Z
+__export_date: 2025-01-22T14:02:08.091Z
 __export_source: insomnia.desktop.app:v10.3.0
 resources:
-  - _id: req_766af44b732b408482486aa2c710c7ac
-    parentId: wrk_e691cc61f929407eb8b72b58edcf68d1
-    modified: 1737481051974
-    created: 1737481037421
-    url: localhost:5000/test
-    name: New Request
-    description: ""
-    method: GET
-    body: {}
-    parameters: []
-    headers:
-      - name: User-Agent
-        value: insomnia/10.3.0
-    authentication: {}
-    metaSortKey: -1737481037421
-    isPrivate: false
-    pathParameters: []
-    settingStoreCookies: true
-    settingSendCookies: true
-    settingDisableRenderRequestBody: false
-    settingEncodeUrl: true
-    settingRebuildPath: true
-    settingFollowRedirects: global
-    _type: request
-  - _id: wrk_e691cc61f929407eb8b72b58edcf68d1
-    parentId: null
-    modified: 1737496092637
-    created: 1736008331897
-    name: api_node_mysql
-    description: ""
-    scope: collection
-    _type: workspace
   - _id: req_064e09f803854255b5b17ae28cb6b8a6
     parentId: fld_e3c15a24550240c898461bbc48d9752c
-    modified: 1737495801201
+    modified: 1737553716471
     created: 1736008355428
     url: http://localhost:5000/costumers/create
     name: create
@@ -47,8 +15,8 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"name_costumer": "2Geraldo",
-        	"email_costumer": "2geraldo@mail",
+        	"name_costumer": "Geraldo",
+        	"email_costumer": "geraldo@mail",
         	"password_costumer": "geraldo123"
         }
     parameters: []
@@ -79,9 +47,17 @@ resources:
     metaSortKey: -1736008347266
     environmentType: kv
     _type: request_group
+  - _id: wrk_e691cc61f929407eb8b72b58edcf68d1
+    parentId: null
+    modified: 1737552372042
+    created: 1736008331897
+    name: CRUD_api_REST_nodeJS
+    description: ""
+    scope: collection
+    _type: workspace
   - _id: req_1676cfc04c37478992d3d767351c71d7
     parentId: fld_e3c15a24550240c898461bbc48d9752c
-    modified: 1737495553479
+    modified: 1737549069342
     created: 1737319912620
     url: http://localhost:5000/costumers/login
     name: login
@@ -168,9 +144,9 @@ resources:
     _type: request
   - _id: req_1b8e874d2f91448fb7aeff19e8a182ca
     parentId: fld_e3c15a24550240c898461bbc48d9752c
-    modified: 1737480311965
+    modified: 1737549056674
     created: 1736008352142
-    url: http://localhost:5000/costumers/update/1
+    url: http://localhost:5000/costumers/update/5
     name: update
     description: ""
     method: PATCH
@@ -188,7 +164,9 @@ resources:
         value: application/json
       - name: User-Agent
         value: insomnia/10.3.0
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NDg5NjcsImV4cCI6MTczNzU1NjE2N30.ZwHXsAK9eKbIzF02HnXsFLYkx4gv4bWu22DCPQE_lOQ
     metaSortKey: -1736008352142
     isPrivate: false
     pathParameters: []
@@ -201,7 +179,7 @@ resources:
     _type: request
   - _id: req_2a62257d1e2142a38ab37798fb961bc7
     parentId: fld_e3c15a24550240c898461bbc48d9752c
-    modified: 1736977213489
+    modified: 1737549047366
     created: 1736008349415
     url: http://localhost:5000/costumers/delete/3
     name: delete
@@ -212,7 +190,9 @@ resources:
     headers:
       - name: User-Agent
         value: insomnia/10.3.0
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NDg5NjcsImV4cCI6MTczNzU1NjE2N30.ZwHXsAK9eKbIzF02HnXsFLYkx4gv4bWu22DCPQE_lOQ
     metaSortKey: -1736008349415
     isPrivate: false
     pathParameters: []
@@ -225,7 +205,7 @@ resources:
     _type: request
   - _id: req_4516da88f8ab4084a49b13293ddd0e8a
     parentId: fld_8616d36b0b8e4ee2bd5fdb832a9e07f1
-    modified: 1737480476782
+    modified: 1737553752870
     created: 1736091963418
     url: http://localhost:5000/categories/create
     name: create
@@ -235,7 +215,7 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"name_category": "Eletronico"
+        	"name_category": "Eletrônica"
         }
     parameters: []
     headers:
@@ -245,7 +225,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTM3MjEsImV4cCI6MTczNzU2MDkyMX0.hEJOB-13rEIFMkg3iPL4Dy1wgLV_fIo1KqiW78mCdrc
     metaSortKey: -1736008355428
     isPrivate: false
     pathParameters: []
@@ -293,9 +273,9 @@ resources:
     _type: request
   - _id: req_13bf8f61300f4f4193830fc046a14fcc
     parentId: fld_8616d36b0b8e4ee2bd5fdb832a9e07f1
-    modified: 1737480407197
+    modified: 1737549137515
     created: 1736948597958
-    url: http://localhost:5000/categories/2
+    url: http://localhost:5000/categories/3
     name: details
     description: ""
     method: GET
@@ -317,9 +297,9 @@ resources:
     _type: request
   - _id: req_108bb980340a4f9e84a6b4550b1c1132
     parentId: fld_8616d36b0b8e4ee2bd5fdb832a9e07f1
-    modified: 1737480420633
+    modified: 1737549149287
     created: 1736091963410
-    url: http://localhost:5000/categories/delete/2
+    url: http://localhost:5000/categories/delete/4
     name: delete
     description: ""
     method: DELETE
@@ -334,7 +314,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NDkwNzYsImV4cCI6MTczNzU1NjI3Nn0.NFaxsN9zrl68gmD6YjA78B-w2P1MIpkznE08r8cwP5Y
     metaSortKey: -1736008349415
     isPrivate: false
     pathParameters: []
@@ -347,7 +327,7 @@ resources:
     _type: request
   - _id: req_7dd92d3eda474fa5895553e908ee5ce7
     parentId: fld_ebbedc88331e4587b6ce643e305ccb7b
-    modified: 1737480552189
+    modified: 1737553775056
     created: 1736091981931
     url: http://localhost:5000/products/create
     name: create
@@ -357,10 +337,10 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"id_category": 3,
-        	"name_product": "TV Smart em plasma 70",
-        	"price_product": 4030.50,
-        	"description": "Tv smart"
+        	"id_category": 1,
+        	"name_product": "ddddTelevisao 40 LED Samsung hb670",
+        	"price_product": 1499.99,
+        	"description": "Televisao 40 LED Samsung hb670"
         }
     parameters: []
     headers:
@@ -370,7 +350,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTM3MjEsImV4cCI6MTczNzU2MDkyMX0.hEJOB-13rEIFMkg3iPL4Dy1wgLV_fIo1KqiW78mCdrc
     metaSortKey: -1736008355428
     isPrivate: false
     pathParameters: []
@@ -418,9 +398,9 @@ resources:
     _type: request
   - _id: req_970b9c0999374f99b0fdebb92218b3fa
     parentId: fld_ebbedc88331e4587b6ce643e305ccb7b
-    modified: 1736964078732
+    modified: 1737549875542
     created: 1736091981925
-    url: http://localhost:5000/products/2
+    url: http://localhost:5000/products/7
     name: details
     description: ""
     method: GET
@@ -442,7 +422,7 @@ resources:
     _type: request
   - _id: req_b3cb6caae70546f0ab91b890ec480b8d
     parentId: fld_ebbedc88331e4587b6ce643e305ccb7b
-    modified: 1736964745379
+    modified: 1737549546919
     created: 1736091981927
     url: http://localhost:5000/products/update/2
     name: update
@@ -452,10 +432,10 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"id_category": 2,
-        	"name_product": "Lavadora de Roupa",
-        	"price_product": 50061.60,
-        	"description": "Testando api table produtos"
+        	"id_category": 5,
+        	"name_product": "Mouse (USB‑C) Multi-Touch",
+        	"price_product": 39.99,
+        	"description": "Magic Mouse (USB‑C) Multi-Touch Preta"
         }
     parameters: []
     headers:
@@ -463,7 +443,9 @@ resources:
         value: application/json
       - name: User-Agent
         value: insomnia/10.3.0
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NDkwNzYsImV4cCI6MTczNzU1NjI3Nn0.NFaxsN9zrl68gmD6YjA78B-w2P1MIpkznE08r8cwP5Y
     metaSortKey: -1736008352142
     isPrivate: false
     pathParameters: []
@@ -476,9 +458,9 @@ resources:
     _type: request
   - _id: req_3484f89b03184e57a646b3ee446a865c
     parentId: fld_ebbedc88331e4587b6ce643e305ccb7b
-    modified: 1736964916664
+    modified: 1737549858476
     created: 1736091981923
-    url: http://localhost:5000/products/delete/3
+    url: http://localhost:5000/products/delete/8
     name: delete
     description: ""
     method: DELETE
@@ -487,7 +469,9 @@ resources:
     headers:
       - name: User-Agent
         value: insomnia/10.3.0
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NDkwNzYsImV4cCI6MTczNzU1NjI3Nn0.NFaxsN9zrl68gmD6YjA78B-w2P1MIpkznE08r8cwP5Y
     metaSortKey: -1736008349415
     isPrivate: false
     pathParameters: []
@@ -500,7 +484,7 @@ resources:
     _type: request
   - _id: req_b4fad4d5d6a24db095cdd8ae219ae6a7
     parentId: fld_baadfa71076846fb815e4843159fab54
-    modified: 1737481154906
+    modified: 1737554354803
     created: 1736091994692
     url: http://localhost:5000/images/create
     name: create
@@ -511,7 +495,7 @@ resources:
       params:
         - id: pair_2986177fd68546c99f4855a51ddc6bfc
           name: id_product
-          value: "4"
+          value: "2"
           description: ""
           disabled: false
           type: text
@@ -522,7 +506,7 @@ resources:
           description: ""
           disabled: false
           type: file
-          fileName: D:\developer\d+\imgs\caneta-esferografica-crista12-cores-bic-12-uni..jpg
+          fileName: D:\developer\d+\imgs\34463553f332743951.webp
     parameters: []
     headers:
       - name: Content-Type
@@ -531,7 +515,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTQwODcsImV4cCI6MTczNzU2MTI4N30.LS8UHUIG_kkACs0qGKiRIxyAC2TiV3SCla0TBB4rB7c
     metaSortKey: -1736008355428
     isPrivate: false
     pathParameters: []
@@ -579,9 +563,9 @@ resources:
     _type: request
   - _id: req_6fcc6b5cdc7e499f9fee4c9c8ef621dd
     parentId: fld_baadfa71076846fb815e4843159fab54
-    modified: 1737482316977
+    modified: 1737551348368
     created: 1736091994684
-    url: http://localhost:5000/images/10
+    url: http://localhost:5000/images/8
     name: details
     description: ""
     method: GET
@@ -603,9 +587,9 @@ resources:
     _type: request
   - _id: req_451112d16d57451aae6f793e799ef59a
     parentId: fld_baadfa71076846fb815e4843159fab54
-    modified: 1737482686637
+    modified: 1737551330518
     created: 1736334854203
-    url: http://localhost:5000/images/product/1
+    url: http://localhost:5000/images/product/4
     name: for products
     description: ""
     method: GET
@@ -627,9 +611,9 @@ resources:
     _type: request
   - _id: req_a95214b136164a879ce0894580ab75d9
     parentId: fld_baadfa71076846fb815e4843159fab54
-    modified: 1737482867181
+    modified: 1737551377697
     created: 1736091994682
-    url: http://localhost:5000/images/delete/1
+    url: http://localhost:5000/images/delete/8
     name: delete
     description: ""
     method: DELETE
@@ -640,7 +624,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTEzNjYsImV4cCI6MTczNzU1ODU2Nn0.iI_rjiMrWmpA0be546MiDMYzEMtK8q_WGtisoz760bQ
     metaSortKey: -1736008349415
     isPrivate: false
     pathParameters: []
@@ -653,7 +637,7 @@ resources:
     _type: request
   - _id: req_b53f1268ea8942afacebf785de404cd0
     parentId: fld_af791aadc55447f89a15779c6780e32d
-    modified: 1737481255327
+    modified: 1737551493396
     created: 1736977288653
     url: http://localhost:5000/orders/create
     name: create
@@ -663,9 +647,9 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"id_costumer": 1,
-        	"id_product": 1,
-        	"quantity": 100
+        	"id_costumer": 2,
+        	"id_product": 7,
+        	"quantity": 30
         }
     parameters: []
     headers:
@@ -675,7 +659,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTEzNjYsImV4cCI6MTczNzU1ODU2Nn0.iI_rjiMrWmpA0be546MiDMYzEMtK8q_WGtisoz760bQ
     metaSortKey: -1736008355428
     isPrivate: false
     pathParameters: []
@@ -730,9 +714,9 @@ resources:
     _type: request
   - _id: req_1654b9c30185454caa7864208908079a
     parentId: fld_af791aadc55447f89a15779c6780e32d
-    modified: 1737481352635
+    modified: 1737551584939
     created: 1736977288644
-    url: http://localhost:5000/orders/6
+    url: http://localhost:5000/orders/5
     name: details
     description: ""
     method: GET
@@ -754,9 +738,9 @@ resources:
     _type: request
   - _id: req_42d10fcc4514496484af1522b46ab4a4
     parentId: fld_af791aadc55447f89a15779c6780e32d
-    modified: 1736978542182
+    modified: 1737551547659
     created: 1736977288648
-    url: http://localhost:5000/orders/update/6
+    url: http://localhost:5000/orders/update/1
     name: update
     description: ""
     method: PATCH
@@ -772,7 +756,9 @@ resources:
         value: application/json
       - name: User-Agent
         value: insomnia/10.3.0
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTEzNjYsImV4cCI6MTczNzU1ODU2Nn0.iI_rjiMrWmpA0be546MiDMYzEMtK8q_WGtisoz760bQ
     metaSortKey: -1736008352142
     isPrivate: false
     pathParameters: []
@@ -785,7 +771,7 @@ resources:
     _type: request
   - _id: req_7542d6f97ea445c788a9d0a0f23c51ba
     parentId: fld_af791aadc55447f89a15779c6780e32d
-    modified: 1737481342266
+    modified: 1737551574912
     created: 1736977288641
     url: http://localhost:5000/orders/delete/6
     name: delete
@@ -798,7 +784,7 @@ resources:
         value: insomnia/10.3.0
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZW51Y2FAbWFpbCIsImlhdCI6MTczNzQ4MDI4MiwiZXhwIjoxNzM3NDg3NDgyfQ.pKb1bGg-cNpIQAuHnXgVhWDHlTdKJJQxc8PcHrgI75c
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb3N0dW1lciI6MSwiZW1haWxfY29zdHVtZXIiOiJnZXJhbGRvQG1haWwiLCJpYXQiOjE3Mzc1NTEzNjYsImV4cCI6MTczNzU1ODU2Nn0.iI_rjiMrWmpA0be546MiDMYzEMtK8q_WGtisoz760bQ
     metaSortKey: -1736008349415
     isPrivate: false
     pathParameters: []
