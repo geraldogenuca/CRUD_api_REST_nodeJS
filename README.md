@@ -3,9 +3,9 @@ CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
-  [__Project__](#Project) |  __Technologies__ |  __How to use__ |  __License__
-
-## :board: Project
+  [__Project__](#Project) |  [__Technologies__](#Technologies) |  [__Using__](#Using) |  [__License__](#License)
+]
+## :file_folder: Project
 
     Creating a simple example of CRUD "Create, Read, Update and Delete" for study, developing a system for registering, 
 modifying and updating products, also registering customers to carry out the sales process. A REST API made with Framework 
@@ -52,7 +52,7 @@ is to understand the main concepts of an API and web development.
   testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
   generation, and environment variables.
 
-## :question: How to use
+## :question: Using
 
 
 ## :chart_with_upwards_trend: License
