@@ -37,7 +37,7 @@ class ImagesControllers {
 
       return res.status(201).json(response);
     } catch (error) {
-      return res.status(400).json({ error: error });
+      return res.status(400).json({ error: "Format or size not supported! Formats(*.jpeg , *.png)."});
     }
   }
 
