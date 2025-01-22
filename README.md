@@ -4,7 +4,7 @@ CRUD system, REST API in Express, nodeJS and MySQL.
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
   [__Project__](#Project) |  [__Technologies__](#Technologies) |  [__Using__](#Using) |  [__License__](#License)
-]
+
 ## :file_folder: Project
 
     Creating a simple example of CRUD "Create, Read, Update and Delete" for study, developing a system for registering, 
