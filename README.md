@@ -3,15 +3,18 @@ CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
-  [__Project__](#Project) |  [__Technologies__](#Technologies) |  [__Using__](#Using) |  [__License__](#License)
+  [Project](#:file_folder:Project) |  [Technologies](#Technologies) |  [Using](#Using) |  [License](#License)
 
 ## :file_folder: Project
 
-    The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
-is to understand the main concepts of an API and web development.
+Performing the clone via the command line.
+- git clone https://github.com/geraldogenuca/CRUD_api_REST_nodeJS.git
+
     Creating a simple example of CRUD "Create, Read, Update and Delete" for study, developing a system for registering, 
 modifying and updating products, also registering customers to carry out the sales process. A REST API made with Framework 
 Express running with node-JavaScript, using MySQL database for data records.
+    The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
+is to understand the main concepts of an API and web development.
 
 ## :computer: Technologies
 
