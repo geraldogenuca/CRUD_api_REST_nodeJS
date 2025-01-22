@@ -1,11 +1,12 @@
-// Import DataBase config and query execute
+// Import DataBase config and query execute.
 const client = require("../../config/config_db");
 
-// Creating the control class
+// Creating the control class.
 class OrdersControllers {
-  // Creation Control
+  // Creation Control.
   async create(req, res) {
     try {
+      // Performing the action.
       const query = `
                 INSERT INTO Orders (
                     id_costumer, id_product, quantity
@@ -34,15 +35,16 @@ class OrdersControllers {
         },
       };
 
-      return res.status(200).json(response);
+      return res.status(201).json(response);
     } catch (error) {
-      return res.status(500).json({ error: error });
+      return res.status(400).json({ error: error });
     }
   }
 
-  // Index Control
+  // Index Control.
   async index(req, res) {
     try {
+      // Performing the action.
       const result = await client.execute(`SELECT * FROM Orders;`);
 
       const response = {
@@ -62,13 +64,14 @@ class OrdersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Details Control
+  // Details Control.
   async show(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_order
                     FROM    Orders
@@ -84,6 +87,7 @@ class OrdersControllers {
         });
       }
 
+      // Performing the action.
       const query = "SELECT * FROM Orders WHERE id_order = ?;";
 
       const result = await client.execute(query, [req.params.id_order]);
@@ -102,12 +106,13 @@ class OrdersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Update Control
+  // Update Control.
   async update(req, res) {
+    // Checking data integrity.
     try {
       const query_check = `
                 SELECT      id_order
@@ -124,6 +129,7 @@ class OrdersControllers {
         });
       }
 
+      // Performing the action.
       const query = `
                 UPDATE      Orders 
                     SET     id_costumer = ?
@@ -147,13 +153,14 @@ class OrdersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Delete Control
+  // Delete Control.
   async delete(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_order
                     FROM    Orders
@@ -169,6 +176,7 @@ class OrdersControllers {
         });
       }
 
+      // Performing the action.
       const query = "DELETE FROM Orders WHERE id_order = ?;";
 
       await client.execute(query, [req.params.id_order]);
@@ -184,10 +192,10 @@ class OrdersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 }
 
-// Import Class Control
+// Import Class Control.
 module.exports = new OrdersControllers();

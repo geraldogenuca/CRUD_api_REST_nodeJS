@@ -7,8 +7,8 @@ const express = require("express"),
   categoriesRoutes = require("./api/routes/categories.routes"),
   productsRoutes = require("./api/routes/products.routes"),
   costumersRoutes = require("./api/routes/costumers.routes"),
-  ordersRoutes = require("./api/routes/orders.routes");
-  imagesRoutes = require("./api/routes/images.routes")
+  ordersRoutes = require("./api/routes/orders.routes"),
+  imagesRoutes = require("./api/routes/images.routes");
 
 // Running dependencies and libs.
 app.use("/public", express.static("public"));
@@ -24,6 +24,5 @@ app.use("/products", productsRoutes);
 app.use("/costumers", costumersRoutes);
 app.use("/orders", ordersRoutes);
 app.use("/images", imagesRoutes);
-app.use('/test', (req, res) => {res.json('Teste funfou mente!!!')})
 
 module.exports = app;

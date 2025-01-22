@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       SERVICE_TAGS: prod
       SERVICE_NAME: mysql_db-service
@@ -26,7 +26,7 @@ services:
     image: node_app:v1
     volumes:
       - /node_app:/code
-    ports: 
+    ports:
       - ${SERVER_PORT}:${SERVER_PORT}
     expose:
       - ${SERVER_PORT}

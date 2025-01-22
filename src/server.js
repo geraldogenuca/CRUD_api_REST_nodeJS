@@ -1,5 +1,7 @@
+// Import variables system.
 require("dotenv").config();
 
+// Creation of server vestments.
 const http = require("http"),
   app = require("./main"),
   port = process.env.SERVER_PORT || 5001,

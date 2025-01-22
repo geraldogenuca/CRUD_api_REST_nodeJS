@@ -1,13 +1,14 @@
-// Import DataBase config and query execute
+// Import DataBase config and query execute.
 const client = require("../../config/config_db"),
-bcrypt = require('bcrypt'),
-jwt = require('jsonwebtoken')
+  bcrypt = require("bcrypt"),
+  jwt = require("jsonwebtoken");
 
-// Creating the control class
+// Creating the control class.
 class CostumersControllers {
-  // Creation Control
+  // Creation Control.
   async create(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      email_costumer
                     FROM    Costumers
@@ -23,6 +24,7 @@ class CostumersControllers {
         });
       }
 
+      // Performing the action.
       const query = `
                 INSERT INTO 
                         Costumers (
@@ -31,7 +33,7 @@ class CostumersControllers {
                     VALUES (?, ?, ?);
             `;
 
-      const password_hash = bcrypt.hashSync(req.body.password_costumer, 10)
+      const password_hash = bcrypt.hashSync(req.body.password_costumer, 10);
 
       const result = await client.execute(query, [
         req.body.name_costumer,
@@ -54,15 +56,16 @@ class CostumersControllers {
         },
       };
 
-      return res.status(200).json(response);
+      return res.status(201).json(response);
     } catch (error) {
-      return res.status(500).json({ error: error });
+      return res.status(400).json({ error: error });
     }
   }
 
-  // Creation Login Control
+  // Creation Login Control.
   async login(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      email_costumer
                     FROM    Costumers
@@ -73,43 +76,49 @@ class CostumersControllers {
       ]);
 
       if (result_check.length < 1) {
-        return res.status(404).json({
+        return res.status(401).json({
           message: "Login failed! Check the fields, or contact support!",
         });
       }
 
-      const query = 'SELECT * FROM Costumers WHERE email_costumer = ?;'
+      // Performing the action.
+      const query = "SELECT * FROM Costumers WHERE email_costumer = ?;";
 
-      const result = await client.execute(query, [req.body.email_costumer])
+      const result = await client.execute(query, [req.body.email_costumer]);
 
-      if(await bcrypt.compareSync(
-        req.body.password_costumer,
-        result[0].password_costumer
-      )) {
-        const token = jwt.sign({
-          id_costumer: result[0].id_costumer,
-          email_costumer: result[0].email_costumer
-        }, 
-        process.env.JWT_KEY,
-        {
-          expiresIn: "2h"
-        })
+      if (
+        await bcrypt.compareSync(
+          req.body.password_costumer,
+          result[0].password_costumer
+        )
+      ) {
+        const token = jwt.sign(
+          {
+            id_costumer: result[0].id_costumer,
+            email_costumer: result[0].email_costumer,
+          },
+          process.env.JWT_KEY,
+          {
+            expiresIn: "2h",
+          }
+        );
 
         return res.status(200).json({
-          message: 'Authenticated successfully!',
-          token: token
-        })
+          message: "Authenticated successfully!",
+          token: token,
+        });
       }
 
-      return res.status(200).json({message: "Authentication Failed!"});
+      return res.status(401).json({ message: "Authentication Failed!" });
     } catch (error) {
-      return res.status(500).json({ error: error });
+      return res.status(400).json({ error: error });
     }
   }
 
-  // Index Control
+  // Index Control.
   async index(req, res) {
     try {
+      // Performing the action.
       const result = await client.execute(`SELECT * FROM Costumers;`);
 
       const response = {
@@ -131,13 +140,14 @@ class CostumersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Details Control
+  // Details Control.
   async show(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_costumer
                     FROM    Costumers
@@ -153,6 +163,7 @@ class CostumersControllers {
         });
       }
 
+      // Performing the action.
       const query = "SELECT * FROM Costumers WHERE id_costumer = ?;";
 
       const result = await client.execute(query, [req.params.id_costumer]);
@@ -173,13 +184,14 @@ class CostumersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Update Control
+  // Update Control.
   async update(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_costumer
                     FROM    Costumers
@@ -195,6 +207,7 @@ class CostumersControllers {
         });
       }
 
+      // Performing the action.
       const query = `
                 UPDATE      Costumers 
                     SET     name_costumer = ?, email_costumer = ?, 
@@ -226,13 +239,14 @@ class CostumersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Delete Control
+  // Delete Control.
   async delete(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_costumer
                     FROM    Costumers
@@ -248,6 +262,7 @@ class CostumersControllers {
         });
       }
 
+      // Performing the action.
       const query = "DELETE FROM Costumers WHERE id_costumer = ?;";
 
       await client.execute(query, [req.params.id_costumer]);
@@ -263,10 +278,10 @@ class CostumersControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 }
 
-// Import Class Control
+// Import Class Control.
 module.exports = new CostumersControllers();

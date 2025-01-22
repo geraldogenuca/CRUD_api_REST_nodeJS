@@ -1,6 +1,6 @@
 FROM node:lts
 
-WORKDIR /usr/code
+WORKDIR /app/code
 
 COPY package*.json ./
 COPY .env ./.env

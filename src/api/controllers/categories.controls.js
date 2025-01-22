@@ -1,11 +1,12 @@
-// Import DataBase config and query execute
+// Import DataBase config and query execute.
 const client = require("../../config/config_db");
 
-// Creating the control class
+// Creating the control class.
 class CategoriesControllers {
-  // Creation Control
+  // Creation Control.
   async create(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      name_category
                     FROM    Categories
@@ -21,6 +22,7 @@ class CategoriesControllers {
         });
       }
 
+      // Performing the action.
       const query = "INSERT INTO Categories (name_category) VALUES (?);";
 
       const result = await client.execute(query, [req.body.name_category]);
@@ -40,13 +42,14 @@ class CategoriesControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      return res.status(500).json({ error: error });
+      return res.status(400).json({ error: error });
     }
   }
 
-  // Index Control
+  // Index Control.
   async index(req, res) {
     try {
+      // Performing the action.
       const result = await client.execute(`SELECT * FROM Categories;`);
 
       const response = {
@@ -66,13 +69,14 @@ class CategoriesControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Details Control
+  // Details Control.
   async show(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                             SELECT      id_category
                                 FROM    Categories
@@ -88,6 +92,7 @@ class CategoriesControllers {
         });
       }
 
+      // Performing the action.
       const query = "SELECT * FROM Categories WHERE id_category = ?;";
 
       const result = await client.execute(query, [req.params.id_category]);
@@ -106,13 +111,14 @@ class CategoriesControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Delete Control
+  // Delete Control.
   async delete(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_category
                     FROM    Categories
@@ -128,6 +134,7 @@ class CategoriesControllers {
         });
       }
 
+      // Performing the action.
       const query = "DELETE FROM Categories WHERE id_category = ?;";
 
       await client.execute(query, [req.params.id_category]);
@@ -143,10 +150,10 @@ class CategoriesControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 }
 
-// Import Class Control
+// Import Class Control.
 module.exports = new CategoriesControllers();

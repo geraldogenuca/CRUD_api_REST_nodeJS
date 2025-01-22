@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const mysql = require("mysql2");
 
-// Database configuration connection
+// Database configuration connection.
 const pool = mysql.createPool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
@@ -11,7 +11,7 @@ const pool = mysql.createPool({
   port: process.env.DB_PORT,
 });
 
-// Query execute
+// Query execute.
 exports.execute = (query, params = []) => {
   return new Promise((resolve, reject) => {
     pool.query(query, params, (error, result, fields) => {

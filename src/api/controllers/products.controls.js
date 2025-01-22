@@ -1,11 +1,12 @@
-// Import DataBase config and query execute
+// Import DataBase config and query execute.
 const client = require("../../config/config_db");
 
-// Creating the control class
+// Creating the control class.
 class ProductsControllers {
-  // Creation Control
+  // Creation Control.
   async create(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      name_product
                     FROM    Products
@@ -21,6 +22,7 @@ class ProductsControllers {
         });
       }
 
+      // Performing the action.
       const query = `
                 INSERT INTO 
                         Products (
@@ -53,15 +55,16 @@ class ProductsControllers {
         },
       };
 
-      return res.status(200).json(response);
+      return res.status(201).json(response);
     } catch (error) {
-      return res.status(500).json({ error: error });
+      return res.status(400).json({ error: error });
     }
   }
 
-  // Index Control
+  // Index Control.
   async index(req, res) {
     try {
+      // Performig the action.
       const result = await client.execute(`SELECT * FROM Products;`);
 
       const response = {
@@ -84,13 +87,14 @@ class ProductsControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Details Control
+  // Details Control.
   async show(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_product
                     FROM    Products
@@ -106,6 +110,7 @@ class ProductsControllers {
         });
       }
 
+      // Performing the action.
       const query = "SELECT * FROM Products WHERE id_product = ?;";
 
       const result = await client.execute(query, [req.params.id_product]);
@@ -127,13 +132,14 @@ class ProductsControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Update Control
+  // Update Control.
   async update(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_product
                     FROM    Products
@@ -149,6 +155,7 @@ class ProductsControllers {
         });
       }
 
+      // Performing the action.
       const query = `
                 UPDATE      Products 
                     SET     id_category = ?, name_product = ?,
@@ -182,13 +189,14 @@ class ProductsControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 
-  // Delete Control
+  // Delete Control.
   async delete(req, res) {
     try {
+      // Checking data integrity.
       const query_check = `
                 SELECT      id_product
                     FROM    Products
@@ -204,6 +212,7 @@ class ProductsControllers {
         });
       }
 
+      // Performing the action.
       const query = "DELETE FROM Products WHERE id_product = ?;";
 
       await client.execute(query, [req.params.id_product]);
@@ -219,10 +228,10 @@ class ProductsControllers {
 
       return res.status(200).json(response);
     } catch (error) {
-      res.status(500).json({ error: error });
+      res.status(400).json({ error: error });
     }
   }
 }
 
-// Import Class Control
+// Import Class Control.
 module.exports = new ProductsControllers();
