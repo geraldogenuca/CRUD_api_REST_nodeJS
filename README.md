@@ -7,12 +7,11 @@ GitHub language count Repository size Made by geraldogenuca Latest GitHub commit
 
 ## :file_folder: Project
 
-    SJKfadb\df\vkbs.
+    The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
+is to understand the main concepts of an API and web development.
     Creating a simple example of CRUD "Create, Read, Update and Delete" for study, developing a system for registering, 
 modifying and updating products, also registering customers to carry out the sales process. A REST API made with Framework 
 Express running with node-JavaScript, using MySQL database for data records.
-    The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
-is to understand the main concepts of an API and web development.
 
 ## :computer: Technologies
 
