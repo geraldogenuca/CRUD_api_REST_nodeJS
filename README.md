@@ -3,7 +3,8 @@ CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
-  - [Project](#project) | = [Technologies](#technologies) | - [Install](#install) | - [Using](#using) | - [License](#license) 
+- [Using](#using)
+- [License](#license)
 
 ## :file_folder: Project
 
@@ -130,9 +131,8 @@ is to understand the main concepts of an API and web development.
   3.2 - If you prefer, you can access the "config_db.js" file, found in the "src/config/" directory, and change the variables to the 
         configuration parameters of your database, and always at the end of any change go to the "docker-compose.yml" file and run "Compose up".
 
-## Using
+# Using
 
-
-## :chart_with_upwards_trend: License
+# License
 
 This project is under the GNU AFFERO GENERAL PUBLIC license. See LICENSE for details.
