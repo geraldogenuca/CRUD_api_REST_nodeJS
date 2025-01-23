@@ -1,30 +1,27 @@
 # CRUD_api_REST_nodeJS
 CRUD (Create, Read, Update and Delete) system for practice and study, a REST API using Express.js and MySQL database.
+
 ## Social Media
-<sub align="center"> 
-    [<img src = "https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white">](https://github.com/geraldogenuca)
-    [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/geraldogenuca/) 
-    [<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/geraldogenuca2024/) 
-</sub>
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/yuriduarte/API-Rest-NodeJS?color=%2304D361">
+<a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
+<img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/yuriduarte/API-Rest-NodeJS">
-	
-  <a href="https://www.linkedin.com/in/yuriduarte/">
-    <img alt="Made by yuriduarte" src="https://img.shields.io/badge/made%20by-yuriduarte-%2304D361">
-  </a>
+<a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
+<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
-  <a href="https://github.com/yuriduarte/API-Rest-NodeJS/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/yuriduarte/API-Rest-NodeJS">
-  </a>
+<a href="https://github.com/geraldogenuca" target="_blank">
+<img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
-  <a href="https://github.com/yuriduarte/API-Rest-NodeJS/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/yuriduarte/API-Rest-NodeJS">
-  </a>
-  <img alt="License" src="https://img.shields.io/badge/license-GNU-brightgreen">
-</p>
+<a href="gegsdeveloper@gmail.com?subject=Fala%20Dev" target="_blank">
+<img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
+<img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+</a>
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
   - [Social Media](#social-media)
@@ -151,7 +148,6 @@ Or download the zip file and unzip it into a folder.
 
 
 ## :man_technologist: Using
-
 
 
 This project is under the GNU license. See [LICENSE](LICENSE.md) for details.
