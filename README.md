@@ -2,8 +2,7 @@
 CRUD (Create, Read, Update and Delete) system for practice and study, a REST API using Express.js and MySQL database.
 
 ## Social Media
-<br>
-<br>
+
 <p aling="center">
   <a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
   <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
@@ -21,6 +20,7 @@ CRUD (Create, Read, Update and Delete) system for practice and study, a REST API
   <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
   </a>
 </p>
+
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
   - [Social Media](#social-media)
