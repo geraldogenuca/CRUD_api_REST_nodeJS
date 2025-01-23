@@ -1,9 +1,33 @@
 # CRUD_api_REST_nodeJS
-CRUD system, REST API in Express, nodeJS and MySQL.
+CRUD (Create, Read, Update and Delete) system for practice and study, a REST API using Express.js and MySQL database.
+## Social Media
+<sub align="center"> 
+    [<img src = "https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white">](https://github.com/geraldogenuca)
+    [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/geraldogenuca/) 
+    [<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/geraldogenuca2024/) 
+</sub>
 
-GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/yuriduarte/API-Rest-NodeJS?color=%2304D361">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/yuriduarte/API-Rest-NodeJS">
+	
+  <a href="https://www.linkedin.com/in/yuriduarte/">
+    <img alt="Made by yuriduarte" src="https://img.shields.io/badge/made%20by-yuriduarte-%2304D361">
+  </a>
+
+  <a href="https://github.com/yuriduarte/API-Rest-NodeJS/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/yuriduarte/API-Rest-NodeJS">
+  </a>
+
+  <a href="https://github.com/yuriduarte/API-Rest-NodeJS/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/yuriduarte/API-Rest-NodeJS">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-GNU-brightgreen">
+</p>
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
+  - [Social Media](#social-media)
   - [:file\_folder: Project](#file_folder-project)
   - [:desktop\_computer: Technologies](#desktop_computer-technologies)
     - [Libs and Framework.](#libs-and-framework)
@@ -13,7 +37,6 @@ GitHub language count Repository size Made by geraldogenuca Latest GitHub commit
     - [Docker environment](#docker-environment)
     - [Creating MySQL Database.](#creating-mysql-database)
   - [:man\_technologist: Using](#man_technologist-using)
-  - [:bookmark\_tabs: License](#bookmark_tabs-license)
 
 ## :file_folder: Project
 
@@ -129,6 +152,6 @@ Or download the zip file and unzip it into a folder.
 
 ## :man_technologist: Using
 
-## :bookmark_tabs: License
 
-This project is under the GNU AFFERO GENERAL PUBLIC license. See LICENSE for details.
+
+This project is under the GNU license. See [LICENSE](LICENSE.md) for details.
