@@ -84,9 +84,9 @@ is to understand the main concepts of an API and web development.
 
 1 - Creating DataBase.
 
-    To create the database, open the database folder in the project root, then open the 'db_api_creater.sql' file, copy everything and 
-    it in MySQL WorkBench, or open the 'db_ERR.mwb' database model file that is in the same folder and synchronize the file.
-  
+  1.1 - To create the database, open the database folder in the project root, then open the "db_api_creater.sql" file, copy everything and 
+        it in MySQL WorkBench, or open the "db_ERR.mwb" database model file that is in the same folder and synchronize the file.
+    
 2 - Configuring Database.
   
   2.1 - Note in the project folder, allow the ".env" file to be saved in the repository, I did this to show the dynamics of using system 
@@ -121,7 +121,9 @@ is to understand the main concepts of an API and web development.
 2 - Configuring Database.
   
   2.1 - See that in the "docker-compose.yml" file, there will also be fields related to environment variables similar to those in the 
-        ".evn"  file, so the process will be similar as if it were local, the difference is that it has to be done and when changed you will have to recreate it in Docker like the "Compose up" procedure by clicking on the document area and executing it, or type it on the command line.
+        ".evn"  file, so the process will be similar as if it were local, the difference is that it has to be done and when changed you 
+        will have to recreate it in Docker like the "Compose up" procedure by clicking on the document area and     executing it, or 
+        type it on the command line.
 
   2.2 - Configure the variables by replacing the name I used in my project with the name of the database you will use.
   
