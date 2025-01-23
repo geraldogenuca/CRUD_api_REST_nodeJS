@@ -3,25 +3,27 @@ CRUD (Create, Read, Update and Delete) system for practice and study, a REST API
 
 ## Social Media
 
-<a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
-<img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
+<div alling='center'>
+  <a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
+  <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
 
-<a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
-<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
+  <a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
 
-<a href="https://github.com/geraldogenuca" target="_blank">
-<img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
+  <a href="https://github.com/geraldogenuca" target="_blank">
+  <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
 
-<a href="gegsdeveloper@gmail.com?subject=Fala%20Dev" target="_blank">
-<img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+  <a href="gegsdeveloper@gmail.com?subject=Fala%20Dev" target="_blank">
+  <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
 
-<a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
-<img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-</a>
+  <a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
+  <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+  </a>
+</div>
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
   - [Social Media](#social-media)
