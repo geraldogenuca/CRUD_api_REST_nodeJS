@@ -2,7 +2,8 @@
 CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
-
+= [:computer: Technologies](#_:computer:_Technologies)
+- [Install](#install)
 - [Using](#using)
 - [License](#license)
 
@@ -17,7 +18,7 @@ Express running with node-JavaScript, using MySQL database for data records.
     The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
 is to understand the main concepts of an API and web development.
 
-## :computer: Technologies
+# :computer: Technologies
 
 ### Libs and Framework.
 
@@ -60,7 +61,7 @@ is to understand the main concepts of an API and web development.
   testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
   generation, and environment variables.
 
-## :gear: Install
+# :gear: Install
 
 ### Local Environment
 1 - Clone the repository as indicated at the beginning of the project. 
