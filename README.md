@@ -2,12 +2,19 @@
 CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
-= [:computer: Technologies](#_:computer:_Technologies)
+= [Technologies](#Technologies)
+- [:file\_folder: Project](#file_folder-project)
+- [Technologies](#technologies)
+  - [Libs and Framework.](#libs-and-framework)
+  - [Apps for development.](#apps-for-development)
 - [Install](#install)
+  - [Local Environment](#local-environment)
+    - [Creating MySQL Database.](#creating-mysql-database)
+  - [Docker environment](#docker-environment)
 - [Using](#using)
 - [License](#license)
 
-## :file_folder: Project
+# :file_folder: Project
 
 Performing the clone via the command line.
 - git clone https://github.com/geraldogenuca/CRUD_api_REST_nodeJS.git
@@ -18,9 +25,9 @@ Express running with node-JavaScript, using MySQL database for data records.
     The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
 is to understand the main concepts of an API and web development.
 
-# :computer: Technologies
+# Technologies
 
-### Libs and Framework.
+## Libs and Framework.
 
 - express: unbiased and minimalist fast web framework for Node. js , which provides a robust set of features 
   for web and mobile applications.
@@ -45,7 +52,7 @@ is to understand the main concepts of an API and web development.
 - multer:  is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written 
   on top of busboy for maximum efficiency.
 
-### Apps for development.
+## Apps for development.
 
 - NodeJS: is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
   and command-line tools.
@@ -61,9 +68,9 @@ is to understand the main concepts of an API and web development.
   testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
   generation, and environment variables.
 
-# :gear: Install
+# Install
 
-### Local Environment
+## Local Environment
 1 - Clone the repository as indicated at the beginning of the project. 
 
   Abra o CMD e execute os comandos abaixo.
@@ -82,7 +89,7 @@ is to understand the main concepts of an API and web development.
 
   With these steps, your node api will already be up and running, but it has a database dependency.
 
-#### Creating MySQL Database.
+### Creating MySQL Database.
 
 1 - Creating DataBase.
 
@@ -100,7 +107,7 @@ is to understand the main concepts of an API and web development.
   3.2 - If you prefer, you can go to the file, "config_db.js", found in the "src/config/" directory, and change the variables to the 
         configuration parameters of your database.
 
-### Docker environment
+## Docker environment
 
 1 - Clone the repository as indicated at the beginning of the project. 
 
