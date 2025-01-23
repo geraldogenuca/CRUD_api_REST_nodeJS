@@ -1,20 +1,21 @@
-#CRUD_api_REST_nodeJS
+# CRUD_api_REST_nodeJS
 CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
-- [:file\_folder: Project](#file_folder-project)
-- [:desktop\_computer: Technologies](#desktop_computer-technologies)
-  - [Libs and Framework.](#libs-and-framework)
-  - [Apps for development.](#apps-for-development)
-- [:computer: Install](#computer-install)
-  - [Local Environment](#local-environment)
-  - [Docker environment](#docker-environment)
-  - [Creating MySQL Database.](#creating-mysql-database)
-- [:man\_technologist: Using](#man_technologist-using)
-- [:bookmark\_tabs: License](#bookmark_tabs-license)
+- [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
+  - [:file\_folder: Project](#file_folder-project)
+  - [:desktop\_computer: Technologies](#desktop_computer-technologies)
+    - [Libs and Framework.](#libs-and-framework)
+    - [Apps for development.](#apps-for-development)
+  - [:computer: Install](#computer-install)
+    - [Local Environment](#local-environment)
+    - [Docker environment](#docker-environment)
+    - [Creating MySQL Database.](#creating-mysql-database)
+  - [:man\_technologist: Using](#man_technologist-using)
+  - [:bookmark\_tabs: License](#bookmark_tabs-license)
 
-# :file_folder: Project
+## :file_folder: Project
 
 Performing the clone via the command line.
 - git clone https://github.com/geraldogenuca/CRUD_api_REST_nodeJS.git
@@ -25,9 +26,9 @@ Express running with node-JavaScript, using MySQL database for data records.
   The aim of the project, in addition to being able to familiarize yourself with the basis of the JavaScript language, 
 is to understand the main concepts of an API and web development.
 
-# :desktop_computer: Technologies
+## :desktop_computer: Technologies
 
-## Libs and Framework.
+### Libs and Framework.
 
 - express: unbiased and minimalist fast web framework for Node. js , which provides a robust set of features 
 for web and mobile applications.
@@ -52,7 +53,7 @@ parties using a compact, self-contained JSON format.
 - multer:  is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written 
 on top of busboy for maximum efficiency.
 
-## Apps for development.
+### Apps for development.
 
 - NodeJS: is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
 and command-line tools.
@@ -68,9 +69,9 @@ applications.
 testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
 generation, and environment variables.
 
-# :computer: Install
+## :computer: Install
 
-## Local Environment
+### Local Environment
 1 - Clone the repository as indicated at the beginning of the project. 
 
 Abra o CMD e execute os comandos abaixo.
@@ -89,7 +90,7 @@ Or download the zip file and unzip it into a folder.
 
 With these steps, your node api will already be up and running, but it has a database dependency.
 
-## Docker environment
+### Docker environment
 
 1 - Clone the repository as indicated at the beginning of the project. 
 
@@ -109,7 +110,7 @@ Or download the zip file and unzip it into a folder.
 
   3.2 - Right-click on any area of ​​the file, go to the Compose Up option and execute, wait for the Docker containers to be created.
 
-## Creating MySQL Database.
+### Creating MySQL Database.
 
 1 - Creating Database.
 
@@ -126,8 +127,8 @@ Or download the zip file and unzip it into a folder.
   3.3 - In Docker, the database will be created together with the application, you will see that in the "docker-compose.yml" file, variables are also used, the only thing you should change in this file will be the name of the containers if you choose .
 
 
-# :man_technologist: Using
+## :man_technologist: Using
 
-# :bookmark_tabs: License
+## :bookmark_tabs: License
 
 This project is under the GNU AFFERO GENERAL PUBLIC license. See LICENSE for details.
