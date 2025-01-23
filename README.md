@@ -3,7 +3,7 @@ CRUD system, REST API in Express, nodeJS and MySQL.
 
 GitHub language count Repository size Made by geraldogenuca Latest GitHub commit Repository issues License
 
-  [Project](#Project) | [Technologies](#Technologies) | [Install](#Install) | [Using](#Using) | [License](#License) 
+  [Project](#project) | [Technologies](#Technologies) | [Install](#Install) | [Using](#Using) | [License](#License) 
 
 ## :file_folder: Project
 
