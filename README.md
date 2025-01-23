@@ -33,6 +33,8 @@ CRUD (Create, Read, Update and Delete) system for practice and study, a REST API
     - [Docker environment](#docker-environment)
     - [Creating MySQL Database.](#creating-mysql-database)
   - [:man\_technologist: Using](#man_technologist-using)
+    - [Project Structure](#project-structure)
+    - [Using API](#using-api)
 
 ## :file_folder: Project
 
@@ -148,5 +150,41 @@ Or download the zip file and unzip it into a folder.
 
 ## :man_technologist: Using
 
+### Project Structure
+
+| Name                                        | Description                                             |
+|---------------------------------------------|---------------------------------------------------------|
+| **database/**                               | Folder with SQL files for creating the database         |
+| **insominia_end-points/**                   | Client API REST testing tool files                      |
+| **public/uploads/**                         | Project photo uploads folder                            |
+| **node_modules/**                           | Storage of project dependencies                         |
+| **src/**                                    | Project source files folder                             |
+| **src/api/controllers/categories/**         | Category Controllers File                               |
+| **src/api/controllers/costumers/**          | Costumer Controllers File                               |
+| **src/api/controllers/images/**             | Image Controllers File                                  |
+| **src/api/controllers/orders/**             | Order Controllers File                                  |
+| **src/api/controllers/products/**           | Product Controller File                                 |
+| **src/api/middleware/login/**               | Login and authentication control file                   |
+| **src/api/middleware/uploads/**             | Middleware File Storage Folder                          |
+| **src/api/routes/categories/**              | Category Routes File                                    |
+| **src/api/routes/costumers/**               | Costumer Routes File                                    |
+| **src/api/routes/images/**                  | Image Routes File                                       |
+| **src/api/routes/orders/**                  | Order Routes File                                       |
+| **src/api/routes/products/**                | Product Routes File                                     |
+| **src/api/config/**                         | Project Settings Folder                                 |
+| **src/api/config/**                         | Database connection configuration file                  |
+| **src/main.js**                             | Application main file                                   |
+| **src/server.js/**                          | Node server creation and status file                    |
+| **.dockerignore/**                          | Docker file to ignore files                             |
+| **.env/**                                   | File for creating variables used in the project         |
+| **.gitignore/**                             | Git file to ignore files                                |
+| **docker-compose.yml/**                     | Docker container creation and management file           |
+| **Dockerfile/**                             | Instruction file for creating containers                |
+| **LISCENSE/**                               | License rules file                                      |
+| **package-lock.json/**                      | Dependency version log file                             |
+| **package.json/**                           | Dependency management and control file                  |
+| 
+
+### Using API
 
 This project is under the GNU license. See [LICENSE](LICENSE.md) for details.
