@@ -34,7 +34,8 @@ CRUD (Create, Read, Update and Delete) system for practice and study, a REST API
     - [Creating MySQL Database.](#creating-mysql-database)
   - [:man\_technologist: Using](#man_technologist-using)
     - [Project Structure](#project-structure)
-    - [Using API](#using-api)
+    - [API end-points](#api-end-points)
+    - [Other end-points](#other-end-points)
 
 ## :file_folder: Project
 
@@ -79,7 +80,7 @@ on top of busboy for maximum efficiency.
 - NodeJS: is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
 and command-line tools.
 
-- MySQL: open source relational database management system used in most free applications to manage their databases. MySQL uses 
+- <img alt="MS SQL Server" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white&style=for-the-badge" />MySQL: open source relational database management system used in most free applications to manage their databases. MySQL uses 
 SQL (Structure Query Language), which is the most popular language for inserting, accessing and managing content stored in 
 a database.
 
@@ -150,8 +151,10 @@ Or download the zip file and unzip it into a folder.
 
 ## :man_technologist: Using
 
+
 ### Project Structure
 
+ _______________________________________________________________________________________________________
 | Name                                        | Description                                             |
 |---------------------------------------------|---------------------------------------------------------|
 | **database/**                               | Folder with SQL files for creating the database         |
@@ -183,8 +186,65 @@ Or download the zip file and unzip it into a folder.
 | **LISCENSE/**                               | License rules file                                      |
 | **package-lock.json/**                      | Dependency version log file                             |
 | **package.json/**                           | Dependency management and control file                  |
-| 
+|_______________________________________________________________________________________________________|
 
-### Using API
+### API end-points
+
+ _______________________________________________________________
+| POST - (create)                                               |
+|---------------------------------------------------------------|
+| **http://localhost:5000/categories/create/**                  |
+| **http://localhost:5000/costumers/create/**                   |
+| **http://localhost:5000/images/create/**                      |
+| **http://localhost:5000/orders/create/**                      |
+| **http://localhost:5000/products/create/**                    |
+|_______________________________________________________________|
+
+ _______________________________________________________________
+| GET - (index)                                                 |
+|---------------------------------------------------------------|
+| **http://localhost:5000/categories/index/**                   |
+| **http://localhost:5000/costumers/index/**                    |
+| **http://localhost:5000/images/index/**                       |
+| **http://localhost:5000/orders/index/**                       |
+| **http://localhost:5000/products/index/**                     |
+|_______________________________________________________________|
+
+ _______________________________________________________________
+| GET - Details - (show)                                        |
+|---------------------------------------------------------------|
+| **http://localhost:5000/categories/:id_category/**            |
+| **http://localhost:5000/costumers/:id_costumer/**             |
+| **http://localhost:5000/images/:id_image/**                   |
+| **http://localhost:5000/orders/:id_order/**                   |
+| **http://localhost:5000/products/:id_product/**               |
+|_______________________________________________________________|
+
+ _______________________________________________________________
+| Update - (update)                                             |
+|---------------------------------------------------------------|
+| **http://localhost:5000/costumers/update/:id_costumer/**      |
+| **http://localhost:5000/orders/update/:id_order/**            |
+| **http://localhost:5000/products/update/:id_product/**        |
+|_______________________________________________________________|
+
+ _______________________________________________________________
+| DELETE - (delete)                                             |
+|---------------------------------------------------------------|
+| **http://localhost:5000/categories/update/id_category/**      |
+| **http://localhost:5000/costumers/update/:id_costumer/**      |
+| **http://localhost:5000/images/update/:id_image/**            |
+| **http://localhost:5000/orders/update/:id_order/**            |
+| **http://localhost:5000/products/update/:id_product/**        |
+|_______________________________________________________________|
+
+ 
+### Other end-points
+ _______________________________________________________________________________________________________________
+| Name                                                | Description                                             |
+|-----------------------------------------------------|---------------------------------------------------------|
+| **http://localhost:5000/costumer/login/**           |  Permission login for customers  - type: POST           |
+| **http://localhost:5000/images/product/**           |  Search all images by product    - type:  GET           |
+|_______________________________________________________________________________________________________________|
 
 This project is under the GNU license. See [LICENSE](LICENSE.md) for details.
