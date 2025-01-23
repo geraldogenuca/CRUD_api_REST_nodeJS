@@ -83,8 +83,9 @@ is to understand the main concepts of an API and web development.
 #### Creating MySQL Database.
 
 1 - Creating DataBase.
-    To create the database, open the database folder in the project root, then open the "db_api_creater.sql" file, copy everything and 
-    it in MySQL WorkBench, or open the "db_ERR.mwb" database model file that is in the same folder and synchronize the file.
+
+  1.1 - To create the database, open the database folder in the project root, then open the "db_api_creater.sql" file, copy everything and 
+        it in MySQL WorkBench, or open the "db_ERR.mwb" database model file that is in the same folder and synchronize the file.
     
 2 - Configuring Database.
   
