@@ -162,34 +162,34 @@ Or download the zip file and unzip it into a folder.
 
 1 - Install Insomnia Download: https://insomnia.rest/download
 
-    - Then install and login.
+  - Then install and login.
 
-    - Now locate the + symbol, next to the filter field to create a new project.
+  - Now locate the + symbol, next to the filter field to create a new project.
 
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia01.png">
-    
-    - Locate and click on Icon Import.
-
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia02.png">
-
-    - Click on Choose Files, and locate the project folder and locate the file "Insomnia_2025-01-22.json", and load the file.
-
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia03.png">
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia04.png">
-
-    - Click Scan, then import.
-
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia05.png">
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia06.png">
-
-    - Then click Import, it will look like in the photo.
-
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia07.png">
-
-    - Open the project collection and have all end-points, as shown in the respective photos below.
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia01.png">
   
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia08.png">
-    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia09.png">
+  - Locate and click on Icon Import.
+
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia02.png">
+
+  - Click on Choose Files, and locate the project folder and locate the file "Insomnia_2025-01-22.json", and load the file.
+
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia03.png">
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia04.png">
+
+  - Click Scan, then import.
+
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia05.png">
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia06.png">
+
+  - Then click Import, it will look like in the photo.
+
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia07.png">
+
+  - Open the project collection and have all end-points, as shown in the respective photos below.
+
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia08.png">
+  <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia09.png">
 
 
 ### Project Structure
