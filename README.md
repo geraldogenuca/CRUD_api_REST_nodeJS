@@ -159,43 +159,44 @@ Or download the zip file and unzip it into a folder.
 
 ### Project Structure
 
- _______________________________________________________________________________________________________
-| Name                                        | Description                                             |
-|---------------------------------------------|---------------------------------------------------------|
-| **database/**                               | Folder with SQL files for creating the database         |
-| **insominia_end-points/**                   | Client API REST testing tool files                      |
-| **public/uploads/**                         | Project photo uploads folder                            |
-| **node_modules/**                           | Storage of project dependencies                         |
-| **src/**                                    | Project source files folder                             |
-| **src/api/controllers/categories/**         | Category Controllers File                               |
-| **src/api/controllers/costumers/**          | Costumer Controllers File                               |
-| **src/api/controllers/images/**             | Image Controllers File                                  |
-| **src/api/controllers/orders/**             | Order Controllers File                                  |
-| **src/api/controllers/products/**           | Product Controller File                                 |
-| **src/api/middleware/login/**               | Login and authentication control file                   |
-| **src/api/middleware/uploads/**             | Middleware File Storage Folder                          |
-| **src/api/routes/categories/**              | Category Routes File                                    |
-| **src/api/routes/costumers/**               | Costumer Routes File                                    |
-| **src/api/routes/images/**                  | Image Routes File                                       |
-| **src/api/routes/orders/**                  | Order Routes File                                       |
-| **src/api/routes/products/**                | Product Routes File                                     |
-| **src/api/config/**                         | Project Settings Folder                                 |
-| **src/api/config/**                         | Database connection configuration file                  |
-| **src/main.js**                             | Application main file                                   |
-| **src/server.js/**                          | Node server creation and status file                    |
-| **.dockerignore/**                          | Docker file to ignore files                             |
-| **.env/**                                   | File for creating variables used in the project         |
-| **.gitignore/**                             | Git file to ignore files                                |
-| **docker-compose.yml/**                     | Docker container creation and management file           |
-| **Dockerfile/**                             | Instruction file for creating containers                |
-| **LISCENSE/**                               | License rules file                                      |
-| **package-lock.json/**                      | Dependency version log file                             |
-| **package.json/**                           | Dependency management and control file                  |
-|_______________________________________________________________________________________________________|
+
+| Name                                | Description                                    |
+|-------------------------------------|------------------------------------------------|
+| **database/**                       | Folder with SQL files for creating the database|
+| **insominia_end-points/**           | Client API REST testing tool files             |
+| **public/uploads/**                 | Project photo uploads folder                   |
+| **node_modules/**                   | Storage of project dependencies                |
+| **src/**                            | Project source files folder                    |
+| **src/api/controllers/categories/** | Category Controllers File                      |
+| **src/api/controllers/costumers/**  | Costumer Controllers File                      |
+| **src/api/controllers/images/**     | Image Controllers File                         |
+| **src/api/controllers/orders/**     | Order Controllers File                         |
+| **src/api/controllers/products/**   | Product Controller File                        |
+| **src/api/middleware/login/**       | Login and authentication control file          |
+| **src/api/middleware/uploads/**     | Middleware File Storage Folder                 |
+| **src/api/routes/categories/**      | Category Routes File                           |
+| **src/api/routes/costumers/**       | Costumer Routes File                           |
+| **src/api/routes/images/**          | Image Routes File                              |
+| **src/api/routes/orders/**          | Order Routes File                              |
+| **src/api/routes/products/**        | Product Routes File                            |
+| **src/api/config/**                 | Project Settings Folder                        |
+| **src/api/config/**                 | Database connection configuration file         |
+| **src/main.js**                     | Application main file                          |
+| **src/server.js/**                  | Node server creation and status file           |
+| **.dockerignore/**                  | Docker file to ignore files                    |
+| **.env/**                           | File for creating variables used in the project|
+| **.gitignore/**                     | Git file to ignore files                       |
+| **docker-compose.yml/**             | Docker container creation and management file  |
+| **Dockerfile/**                     | Instruction file for creating containers       |
+| **LISCENSE/**                       | License rules file                             |
+| **package-lock.json/**              | Dependency version log file                    |
+| **package.json/**                   | Dependency management and control file         |
+
+
 
 ### API end-points
 
- _______________________________________________________________
+
 | POST - (create)                                               |
 |---------------------------------------------------------------|
 | **http://localhost:5000/categories/create/**                  |
@@ -203,53 +204,51 @@ Or download the zip file and unzip it into a folder.
 | **http://localhost:5000/images/create/**                      |
 | **http://localhost:5000/orders/create/**                      |
 | **http://localhost:5000/products/create/**                    |
-|_______________________________________________________________|
 
- _______________________________________________________________
-| GET - (index)                                                 |
-|---------------------------------------------------------------|
-| **http://localhost:5000/categories/index/**                   |
-| **http://localhost:5000/costumers/index/**                    |
-| **http://localhost:5000/images/index/**                       |
-| **http://localhost:5000/orders/index/**                       |
-| **http://localhost:5000/products/index/**                     |
-|_______________________________________________________________|
 
- _______________________________________________________________
+| GET - (index)                                  |
+|------------------------------------------------|
+| **http://localhost:5000/categories/index/**    |
+| **http://localhost:5000/costumers/index/**     |
+| **http://localhost:5000/images/index/**        |
+| **http://localhost:5000/orders/index/**        |
+| **http://localhost:5000/products/index/**      |
+
+
 | GET - Details - (show)                                        |
-|---------------------------------------------------------------|
-| **http://localhost:5000/categories/:id_category/**            |
-| **http://localhost:5000/costumers/:id_costumer/**             |
-| **http://localhost:5000/images/:id_image/**                   |
-| **http://localhost:5000/orders/:id_order/**                   |
-| **http://localhost:5000/products/:id_product/**               |
-|_______________________________________________________________|
+|----------------------------------------------------|
+| **http://localhost:5000/categories/:id_category/** |
+| **http://localhost:5000/costumers/:id_costumer/**  |
+| **http://localhost:5000/images/:id_image/**        |
+| **http://localhost:5000/orders/:id_order/**        |
+| **http://localhost:5000/products/:id_product/**    |
 
- _______________________________________________________________
-| Update - (update)                                             |
-|---------------------------------------------------------------|
-| **http://localhost:5000/costumers/update/:id_costumer/**      |
-| **http://localhost:5000/orders/update/:id_order/**            |
-| **http://localhost:5000/products/update/:id_product/**        |
-|_______________________________________________________________|
 
- _______________________________________________________________
-| DELETE - (delete)                                             |
-|---------------------------------------------------------------|
-| **http://localhost:5000/categories/update/id_category/**      |
-| **http://localhost:5000/costumers/update/:id_costumer/**      |
-| **http://localhost:5000/images/update/:id_image/**            |
-| **http://localhost:5000/orders/update/:id_order/**            |
-| **http://localhost:5000/products/update/:id_product/**        |
-|_______________________________________________________________|
+
+| Update - (update)                                        |
+|----------------------------------------------------------|
+| **http://localhost:5000/costumers/update/:id_costumer/** |
+| **http://localhost:5000/orders/update/:id_order/**       |
+| **http://localhost:5000/products/update/:id_product/**   |
+
+
+| DELETE - (delete)                                        |
+|----------------------------------------------------------|
+| **http://localhost:5000/categories/update/id_category/** |
+| **http://localhost:5000/costumers/update/:id_costumer/** |
+| **http://localhost:5000/images/update/:id_image/**       |
+| **http://localhost:5000/orders/update/:id_order/**       |
+| **http://localhost:5000/products/update/:id_product/**   |
+
 
  
 ### Other end-points
- _______________________________________________________________________________________________________________
-| Name                                                | Description                                             |
-|-----------------------------------------------------|---------------------------------------------------------|
-| **http://localhost:5000/costumer/login/**           |  Permission login for customers  - type: POST           |
-| **http://localhost:5000/images/product/**           |  Search all images by product    - type:  GET           |
-|_______________________________________________________________________________________________________________|
+
+
+| Name                                                | Description                         |
+|-------------------------------------------|-----------------------------------------------|
+| **http://localhost:5000/costumer/login/** |  Permission login for customers  - type: POST |
+| **http://localhost:5000/images/product/** |  Search all images by product    - type:  GET |
+
 
 This project is under the GNU license. See [LICENSE](LICENSE.md) for details.
