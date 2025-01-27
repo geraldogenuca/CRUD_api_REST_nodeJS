@@ -78,7 +78,7 @@ on top of busboy for maximum efficiency.
 
 ### Apps for development.
 
-<br><br>
+<br>
 <img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white&style=for-the-badge" /><br>
 NodeJS is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
 and command-line tools.
@@ -96,6 +96,7 @@ Docker is an open source containerization technology designed for developers, an
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)<br>
 Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
 generation, and environment variables.
+<br>
 
 ## :computer: Install
 
