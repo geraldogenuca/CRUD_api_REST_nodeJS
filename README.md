@@ -84,16 +84,16 @@ NodeJS is a server-side JavaScript code execution environment. It is used to cre
 and command-line tools.
 <br><br>
 
-<img alt="MySQL" src="https://img.shields.io/badge/MySQL-20232A?logo=mysql&logoColor=white&style=for-the-badge" /> 
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-20232A?logo=mysql&logoColor=white&style=for-the-badge" /> <br>
 Database open source relational database management system used in most free applications to manage their databases. MySQL uses SQL (Structure Query Language), which is the most popular language for inserting, accessing and managing content stored in 
 a database.
 <br><br>
 
-<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" /> 
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" /> <br>
 Docker is an open source containerization technology designed for developers, and used to package, deliver, and run applications.
 <br><br>
 
-![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
+![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)<br>
 Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
 generation, and environment variables.
 
