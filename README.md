@@ -162,7 +162,7 @@ Or download the zip file and unzip it into a folder.
 1 - Install Insomnia Download: https://insomnia.rest/download
     Then install and login
     Now locate the + symbol next to the filter field to create a new project.
-    <img src="public/uploads/insomnia01.png.png>
+    <img src="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/blob/main/public/uploads/insomnia01.png">
 
 
 ### Project Structure
