@@ -80,23 +80,23 @@ on top of busboy for maximum efficiency.
 
 <br><br>
 <img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white&style=for-the-badge" /> 
-  NodeJS is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
+
+NodeJS is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
 and command-line tools.
 <br><br>
 
 <img alt="MySQL" src="https://img.shields.io/badge/MySQL-20232A?logo=mysql&logoColor=white&style=for-the-badge" /> 
-  Database open source relational database management system used in most free applications to manage their databases. MySQL 
-uses SQL (Structure Query Language), which is the most popular language for inserting, accessing and managing content stored in 
+Database open source relational database management system used in most free applications to manage their databases. MySQL uses SQL (Structure Query Language), which is the most popular language for inserting, accessing and managing content stored in 
 a database.
 <br><br>
 
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" /> 
-  Docker is an open source containerization technology designed for developers, and used to package, deliver, and run applications.
+Docker is an open source containerization technology designed for developers, and used to package, deliver, and run applications.
 <br><br>
 
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
-  Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and
-testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
+
+Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
 generation, and environment variables.
 
 ## :computer: Install
