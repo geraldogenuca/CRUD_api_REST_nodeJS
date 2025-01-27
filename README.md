@@ -156,6 +156,13 @@ Or download the zip file and unzip it into a folder.
 
 ## :man_technologist: Using
 
+### Using the API
+
+1 - Install Insomnia Download: https://insomnia.rest/download
+    Then install and login
+    Now locate the + symbol next to the filter field to create a new project.
+    <img src="D:\developer\CRUD_api_REST_nodeJS\public\uploads\2025-01-27 (3).png>
+
 
 ### Project Structure
 
