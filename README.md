@@ -34,7 +34,7 @@ __CRUD__ (Create, Read, Update and Delete) system for practice and study, a REST
 
 ## :link: Social Media
 
-<p aling="center">
+<p align="center">
   <a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
     <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
   </a>
