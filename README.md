@@ -1,26 +1,20 @@
 # CRUD_api_REST_nodeJS
 __CRUD__ (Create, Read, Update and Delete) system for practice and study, a REST API using __Express.js__ and __MySQL__ database.
 
-## :link: Social Media
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/geraldogenuca/CRUD_api_REST_nodeJS?color=%2304D361">
 
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/geraldogenuca/CRUD_api_REST_nodeJS">
+	
+  <a href="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/geraldogenuca/CRUD_api_REST_nodeJS">
+  </a>
 
-<a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
-<img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
-<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://github.com/geraldogenuca" target="_blank">
-<img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
-<img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-</a>
-
-
+  <a href="https://github.com/geraldogenuca/CRUD_api_REST_nodeJS/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/geraldogenuca/CRUD_api_REST_nodeJS">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-GNU-brightgreen">
+</p>
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
   - [:link: Social Media](#link-social-media)
@@ -37,6 +31,26 @@ __CRUD__ (Create, Read, Update and Delete) system for practice and study, a REST
     - [Project Structure](#project-structure)
     - [API end-points](#api-end-points)
     - [Other end-points](#other-end-points)
+
+## :link: Social Media
+
+<p aling="center">
+  <a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+
+  <a href="https://github.com/geraldogenuca" target="_blank">
+    <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+
+  <a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
+    <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+  </a>
+</p>
 
 ## :file_folder: Project
 
