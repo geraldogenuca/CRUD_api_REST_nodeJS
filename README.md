@@ -3,23 +3,23 @@ __CRUD__ (Create, Read, Update and Delete) system for practice and study, a REST
 
 ## :link: Social Media
 
-<p>
-  <a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
-  <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
 
-  <a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
-  <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
+<a href="https://www.instagram.com/geraldogenuca2024/" target="_blank">
+<img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
 
-  <a href="https://github.com/geraldogenuca" target="_blank">
-  <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
+<a href="https://www.linkedin.com/in/geraldo-g-s-jr-987218201/" target="_blank">
+<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
-  <a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
-  <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p>
+<a href="https://github.com/geraldogenuca" target="_blank">
+<img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=5585994260049" target="_blank">
+<img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+</a>
+
 
 
 - [CRUD\_api\_REST\_nodeJS](#crud_api_rest_nodejs)
@@ -81,16 +81,16 @@ on top of busboy for maximum efficiency.
 <img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white&style=for-the-badge" /><br>
 NodeJS is a server-side JavaScript code execution environment. It is used to create web applications, automation programs, 
 and command-line tools.
-<br><br>
+<br>
 
 <img alt="MySQL" src="https://img.shields.io/badge/MySQL-20232A?logo=mysql&logoColor=white&style=for-the-badge" /> <br>
 MySQL Database open source relational database management system used in most free applications to manage their databases. MySQL uses SQL (Structure Query Language), which is the most popular language for inserting, accessing and managing content stored in 
 a database.
-<br><br>
+<br>
 
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" /> <br>
 Docker is an open source containerization technology designed for developers, and used to package, deliver, and run applications.
-<br><br>
+<br>
 
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)<br>
 Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code 
